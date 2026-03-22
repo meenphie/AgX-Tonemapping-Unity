@@ -43,14 +43,14 @@ If you're not familiar with external LUTs in Unity, follow these steps to set it
 
 BIRP/HDRP
 
-1. Download the Unitypackage from from [the release page](https://github.com/FairplexVR/AgX-Tonemapping-Unity/releases/tag/1.0.0) and import it your Unity project.
+1. Use the package manager > add from URL https://github.com/meenphie/AgX-Tonemapping-Unity.git.
 2. In your global Post-Process Volume Component, add a Color Grading effect by clicking on Add Effect... > Unity > Color Grading.
 3. Change the Mode to External.
 4. In the Lookup Texture field, drag and drop a LUT of your choice.
 
 URP
 
-1. Download the Unitypackage from from [the release page](https://github.com/FairplexVR/AgX-Tonemapping-Unity/releases/tag/1.0.0) and import it your Unity project.
+1. Use the package manager > add from URL https://github.com/meenphie/AgX-Tonemapping-Unity.git.
 2. Remove any color grading from the Global Volume Component if you have any.
 3. Go to your Universal Render Pipeline Asset, change the Post-Process Grading mode to HDR
 4. Go to your Universal Renderer Data, add a Renderer Feature.
