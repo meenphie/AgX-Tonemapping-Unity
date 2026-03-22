@@ -21,7 +21,7 @@ MonoBehaviour:
     value: 2
   externalLut:
     overrideState: 1
-    value: {fileID: 11700000, guid: 5adb7b3394f4ec92698f2a82aeae0fc0, type: 3}
+    value: {fileID: 11700000, guid: fb8e1b785dbc006198ed51bce6df33d9, type: 3}
     defaultState: 1
   tonemapper:
     overrideState: 1
@@ -1329,10 +1329,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.3
+    value: 0.25
   threshold:
     overrideState: 1
-    value: 0.5
+    value: 1
   softKnee:
     overrideState: 0
     value: 0.5
@@ -1340,7 +1340,7 @@ MonoBehaviour:
     overrideState: 1
     value: 10
   diffusion:
-    overrideState: 1
+    overrideState: 0
     value: 10
   anamorphicRatio:
     overrideState: 0

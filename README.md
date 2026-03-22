@@ -4,7 +4,13 @@
 
 ### What is this?
 
-AgX is the new color transform introduced in Blender 4.0, surpassing Filmic and ACES in many aspects. This repository contains a collection of AgX LUTs that are compatible with Unity BIRP and HDRP only. (Sorry URP!)
+AgX is the new color transform introduced in Blender 4.0, surpassing Filmic and ACES in many aspects. This repository contains a collection of AgX LUTs that are compatible with Unity BIRP and HDRP.
+
+> [!NOTE]
+> For URP, we can't use external LUTs in the global volume. 
+> We need to use it as a render feature. 
+> I added some basic support. Please look at the example assets in the 
+> URP folder, there are some preconfigured assets for URP.
 
 This Unity pack is inspired by the original [AgX by Troy Sobotka](https://github.com/sobotka/AgX) and the [Blender AgX implementation](https://github.com/EaryChow/AgX). The LUTs in the pack are configured to provide visual consistency with Blender's OCIO presets:
 
@@ -35,9 +41,19 @@ With AgX, you can now achieve a similar look between Blender and Unity:
 
 If you're not familiar with external LUTs in Unity, follow these steps to set it up. Assuming your project is configured in Linear Color Space with a working Post-Process, here's how to add the external LUTs:
 
+BIRP/HDRP
+
 1. Download the Unitypackage from from [the release page](https://github.com/FairplexVR/AgX-Tonemapping-Unity/releases/tag/1.0.0) and import it your Unity project.
 2. In your global Post-Process Volume Component, add a Color Grading effect by clicking on Add Effect... > Unity > Color Grading.
 3. Change the Mode to External.
 4. In the Lookup Texture field, drag and drop a LUT of your choice.
+
+URP
+
+1. Download the Unitypackage from from [the release page](https://github.com/FairplexVR/AgX-Tonemapping-Unity/releases/tag/1.0.0) and import it your Unity project.
+2. Remove any color grading from the Global Volume Component if you have any.
+3. Go to your Universal Render Pipeline Asset, change the Post-Process Grading mode to HDR
+4. Go to your Universal Renderer Data, add a Renderer Feature.
+5. In the Pass Material, use a Full Screen Shader shader (I created a LUT template for convenience)
 
 Enjoy!
