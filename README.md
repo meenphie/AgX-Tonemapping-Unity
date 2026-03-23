@@ -14,15 +14,20 @@ AgX is the new color transform introduced in Blender 4.0, surpassing Filmic and 
 
 This Unity pack is inspired by the original [AgX by Troy Sobotka](https://github.com/sobotka/AgX) and the [Blender AgX implementation](https://github.com/EaryChow/AgX). The LUTs in the pack are configured to provide visual consistency with Blender's OCIO presets:
 
-- Base Contrast
-- Medium High Contrast
-- High Contrast
-- Very High Contrast
-- Medium Low Contrast
-- Low Contrast
-- Very Low Contrast
-- Punchy
-- Greyscale
+- Defaut Presets:
+  - Base Contrast
+  - Medium High Contrast
+  - High Contrast
+  - Very High Contrast
+  - Medium Low Contrast
+  - Low Contrast
+  - Very Low Contrast
+  - Punchy
+  - Greyscale
+
+- My custom variants
+  - AgX - Powerful (My first attempt to bring back contrast, colors and brightness)
+  - Agx - Hue (Based on AgX - Powerful, but with a little less power and more saturation (Slope 1.1, Power 1.1, Saturation 1.3), I recommend using this one!)
 
 Check out the [Blender release notes](https://developer.blender.org/docs/release_notes/4.0/color_management/) for more information about AgX.
 
